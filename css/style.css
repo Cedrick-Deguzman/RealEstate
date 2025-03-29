@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.navbar {
+    margin: 30px 7.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo h1{
+    font-size: 40px;
+}
+
+#logo a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar-item {
+    display: flex;
+    justify-content: center;
+    width: 50%;;
+}
+
+#navbar-item ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+}
+
+#navbar-item li {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#navbar-item a {
+   text-decoration: none;
+   font-size: 25px;
+   color:black;
+   font-weight: bold;
+}
+
+#sign-in button{
+    margin: 10px 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+    
+}
+
+#sign-in a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+header{
+    width: 25%;
+    margin: 10%;
+}
+
+header h2 {
+    font-size: 50px;
+    padding: 20px;
+}
+
+header p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5% 10%;
+    background-color: aliceblue;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.search-bar label {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    font-size: 30px;
+    border: 0;
+    outline: 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 5% 10%;
+}
+
+legend {
+    font-size: 40px;
+    padding: 10px;
+    font-style: italic;
+    color: orange;
+}
+
+.card-container-title {
+    font-size: 50px;
+    padding: 20px;
+    /* color: white; */
+}
+.card {
+    width: 100%; 
+    max-width: 300px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+}
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.card-image {
+    width: 100%; 
+    height: auto; 
+}
+
+.card-image img {
+    width: 100%; 
+    height: auto;
+    display: block; 
+}
