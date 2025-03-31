@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav id="navbar">
         <nav id="logo">
             <h1>
                 <a href="#"><span id="logo-text">KUBO</span></a>
@@ -16,13 +16,13 @@
         <nav id="navbar-item">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">Lstings</a></li>
+                <li><a href="services.html">Agents</a></li>
+                <li><a href="contact.html">About Us</a></li>
             </ul>
         </nav>
         <nav id="sign-in">
-            <button>
+            <button class="button">
                 <a href="signup.html">Sign In</a>
             </button>
         </nav>
@@ -32,7 +32,7 @@
         <p>Reimagining real estate to make it easier to unlock life's next chapter</p>
     </header>
 
-    <div class="search-bar">
+    <div id="search-bar">
         <label for="message">Location:</label>
         <input id="message" required></input>
     </div>
@@ -40,10 +40,14 @@
     <div class="card-container">
         <fieldset>
             <legend>Best Choice</legend>
-            <div>
-                <p class="card-container-title">
+            <div id="card-container-title">
+                <p>
                     Popular Residences  
                 </p>
+                <div class="button">
+                    <a>&lt;</a>
+                    <a>&gt;</a>
+                </div>
             </div>
             <div class="card-wrapper">
                 <div class="card">
@@ -52,7 +56,8 @@
                     </div>
                     <div class="card-content">
                         <h3>House 1</h3>
-                        <p>Description of House 1.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis magna id ligula rhoncus, id ullamcorper est dictum. Vivamus vel.</p>
+                        <button class="card-button">View</button>
                     </div>
                 </div>
     
@@ -62,7 +67,8 @@
                     </div>
                     <div class="card-content">
                         <h3>House 2</h3>
-                        <p>Description of House 2.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis magna id ligula rhoncus, id ullamcorper est dictum. Vivamus vel.</p>
+                        <button class="card-button">View</button>
                     </div>
                 </div>
     
@@ -72,7 +78,8 @@
                     </div>
                     <div class="card-content">
                         <h3>House 3</h3>
-                        <p>Description of House 3.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis magna id ligula rhoncus, id ullamcorper est dictum. Vivamus vel.</p>
+                        <button class="card-button">View</button>
                     </div>
                 </div>
     
@@ -82,7 +89,8 @@
                     </div>
                     <div class="card-content">
                         <h3>House 4</h3>
-                        <p>Description of House 4.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis magna id ligula rhoncus, id ullamcorper est dictum. Vivamus vel.</p>
+                        <button class="card-button">View</button>
                     </div>
                 </div>
     
@@ -92,12 +100,16 @@
                     </div>
                     <div class="card-content">
                         <h3>House 5</h3>
-                        <p>Description of House 5.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mollis magna id ligula rhoncus, id ullamcorper est dictum. Vivamus vel.</p>
+                        <button class="card-button">View</button>
                     </div>
                 </div>
             </div>
         </fieldset>
     </div>
+    <footer style="margin-top: 50px;">
+
+    </footer>
 
 </body>
 </html>
