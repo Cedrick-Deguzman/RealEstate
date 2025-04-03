@@ -111,9 +111,10 @@ header p {
 }
 
 .card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
     backdrop-filter: blur(5px);
 }
 
@@ -143,22 +144,26 @@ legend {
     cursor: pointer;
 }
 
-
-.card {
-    width: 100%; 
-    max-width: 300px; 
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 10px;
-}
 .card-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: calc(250px * 12);
+    animation: scroll 12s linear infinite;
+}
+
+.card {
+    width: 250px; 
+    flex: 0 0 auto;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
 }
 
 .card-wrapper h3 {
@@ -179,15 +184,10 @@ legend {
     max-height: 100px;
     overflow: hidden;
 }
-.card-image {
-    width: 100%; 
-    height: auto; 
-}
 
 .card-image img {
     width: 100%; 
-    height: auto;
-    display: block; 
+    border-radius: 10px;
 }
 
 .card-button{
@@ -201,3 +201,8 @@ legend {
     color: white;
     cursor: pointer;
 }
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
